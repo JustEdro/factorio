@@ -1,17 +1,17 @@
 # Containerized Factorio Headless Server
 
-[![Latest Build Status](https://github.com/JustEdro/factorio/actions/workflows/build-latest.yml/badge.svg)](https://github.com/JustEdro/factorio/actions/workflows/build-latest.yml) [![Docker Pulls](https://img.shields.io/docker/pulls/JustEdro/factorio.svg)](https://hub.docker.com/r/JustEdro/factorio/) [![Docker Stars](https://img.shields.io/docker/stars/JustEdro/factorio.svg)](https://hub.docker.com/r/JustEdro/factorio/) [![License](https://img.shields.io/github/license/JustEdro/factorio.svg)](https://github.com/JustEdro/factorio)
+[![Latest Build Status](https://github.com/justedro/factorio/actions/workflows/build-latest.yml/badge.svg)](https://github.com/justedro/factorio/actions/workflows/build-latest.yml) [![Docker Pulls](https://img.shields.io/docker/pulls/justedro/factorio.svg)](https://hub.docker.com/r/justedro/factorio/) [![Docker Stars](https://img.shields.io/docker/stars/justedro/factorio.svg)](https://hub.docker.com/r/justedro/factorio/) [![License](https://img.shields.io/github/license/justedro/factorio.svg)](https://github.com/justedro/factorio)
 
 | Docker Tag | Factorio Version | Description | Release Date |
 | --- | :---: | --- | :---: |
 | [latest, stable](./stable/Dockerfile) | [1.1.94](https://forums.factorio.com/109267) | Factorio headless server stable release | 2023-10-30 |
-| [experimental](https://github.com/JustEdro/factorio/blob/main/experimental/Dockerfile) | [1.1.94](https://forums.factorio.com/109267)| Factorio headless server experimental release | 2023-10-19 |
-| [1.1.94](https://github.com/JustEdro/factorio/releases/tag/1.1.94) | [1.1.94](https://forums.factorio.com/109267) | Factorio headless server stable static release | 2023-10-30 |
+| [experimental](https://github.com/justedro/factorio/blob/main/experimental/Dockerfile) | [1.1.94](https://forums.factorio.com/109267)| Factorio headless server experimental release | 2023-10-19 |
+| [1.1.94](https://github.com/justedro/factorio/releases/tag/1.1.94) | [1.1.94](https://forums.factorio.com/109267) | Factorio headless server stable static release | 2023-10-30 |
 
 ---
 
-* [Recent changes, see: GitHub CHANGELOG.md](https://github.com/JustEdro/factorio/blob/main/CHANGELOG.md)
-* [Report any bugs, issues or feature requests on GitHub](https://github.com/JustEdro/factorio/issues)
+* [Recent changes, see: GitHub CHANGELOG.md](https://github.com/justedro/factorio/blob/main/CHANGELOG.md)
+* [Report any bugs, issues or feature requests on GitHub](https://github.com/justedro/factorio/issues)
 
 ---
 
@@ -62,7 +62,7 @@ A custom UID and GID can be configured for the container internal factorio user 
 ```bash
 $ docker run --name factorio -d \
     -p 34197:34197/udp \
-    JustEdro/factorio
+    justedro/factorio
 ```
 
 ---
@@ -77,7 +77,7 @@ version: '3'
 
 services:
   factorio:
-    image: JustEdro/factorio
+    image: justedro/factorio
     container_name: factorio
     restart: unless-stopped
     ports:

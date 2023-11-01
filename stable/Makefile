@@ -3,7 +3,7 @@
 
 
 
-NS ?= JustEdro
+NS ?= justedro
 
 IMAGE_NAME ?= factorio
 CONTAINER_NAME ?= factorio

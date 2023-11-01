@@ -2,7 +2,7 @@ version: '3'
 
 services:
   factorio:
-    image: JustEdro/factorio
+    image: justedro/factorio
     container_name: factorio
     restart: unless-stopped
     ports:
